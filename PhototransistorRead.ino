@@ -20,7 +20,7 @@ void loop() {
   // assign the variable to the value of the ArduSensor
   ArduSensorValue=analogRead(0);
 
-  int val = map(ArduSensorValue, 35, 950, 10, 0);  // convert the value
+  int val = map(ArduSensorValue, 35, 950, 100, 0);  // convert the value
   // to easily readable numbers
   
   Serial.println(val);  // print the value on the Serial monitor
